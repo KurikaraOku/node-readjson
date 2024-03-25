@@ -1,5 +1,5 @@
 const showCrafts = async () => {
-    let response = await fetch("http://localhost:3000/api/crafts");
+    let response = await fetch("/api/crafts");
 
     let craftJSON = await response.json();
     let craftDiv = document.getElementById("craft-list");
